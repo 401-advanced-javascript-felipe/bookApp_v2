@@ -16,6 +16,7 @@ app.set('view engine', 'ejs');
 
 // API Routes
 const router = require('./routes/routes');
+
 app.use(router);
 
 module.exports = {
