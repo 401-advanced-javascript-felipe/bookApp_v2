@@ -111,7 +111,6 @@ function getBookshelves() {
   return client.query(SQL);
 }
 
-
 function updateBook(request, response) {
   console.log('updating');
   let { title, author, isbn, image_url, description, bookshelf_id } = request.body;
@@ -136,7 +135,5 @@ function deleteBook(request, response) {
 function handleError(error, response) {
   response.render('pages/error', { error: error });
 }
-
-
 
 module.exports = {getBooks, newSearch, createSearch, getBook, createBook, updateBook, deleteBook};
