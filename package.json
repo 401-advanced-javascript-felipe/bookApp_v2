@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "psql -d book_app -f seedDB.sql"
+    "seed": "psql -d book_app -f seedDB.sql",
+    "lint": "eslint server.js"
   },
   "keywords": [],
   "author": "Code Fellows, LLC",
@@ -14,6 +15,7 @@
   "dependencies": {
     "dotenv": "^7.0.0",
     "ejs": "^2.6.1",
+    "eslint": "^5.16.0",
     "express": "^4.16.2",
     "method-override": "^3.0.0",
     "pg": "^7.3.0",
